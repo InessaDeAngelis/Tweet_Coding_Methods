@@ -1,0 +1,46 @@
+---
+title: "Is this a Harassing Tweet? Using ChatGPT to Categorize Naunced Forms of Online Harassment"
+author: 
+  - Inessa De Angelis^[Faculty of Information, University of Toronto, Inessa.DeAngelis@mail.utoronto.ca]
+thanks: "Code and data available at: https://github.com/InessaDeAngelis/Tweet_Coding_Methods"
+date: "today"
+date-format: "long"
+abstract: "Write something here. *This paper contains language and themes that some readers may find offensive.*"
+format: pdf
+toc: true
+number-sections: true
+bibliography: references.bib
+csl: apa.csl
+---
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+#### Workspace set-up ####
+# Load packages #
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(ggplot2)
+library(formattable)
+
+# Read in the data #
+
+```
+
+# Introduction
+Manual qualitative and quantitative content analysis are common methods in communication research [@krippendorff]. Increasingly, communication researchers are automating the process using natural language processing (NLP), machine learning (ML), computer vision [@joo2022], and large language models (LLMS). To ensure validity and reliability, multiple coders are always required [@lacy2015]. There are previously identified problems with human coders, including failing to ask questions, getting bored during the coding process, and other issues identified by @lacy2015. 
+
+This paper builds on the manual quantitative content analysis of 4,139 Tweets sent by three, female Canadian politicians which specifically discuss climate change and environmental policy to determine the severity of harassment and type of account behind the replies [@inessa]. 
+
+Results from three human coders and ChatGPT 4.0 emphasize XXX and that there is potential to further use LLMs to detect harassing content. 
+
+Previous research in other social science fields have used LLMs to re-code open-ended political survey question responses [@mellon2024], and detect implicit online hate speech [@huang2023; @chiu2021].
+
+Previous political communications research investigating the online harassment of politicians, including in Canada, the United Kingdom, and Germany often relies on the creation of categories and typologies to code the Tweets. Some of these are binary in nature, asking whether a Tweet contains harassment or incivility on a "yes" or "no" basis [@theocharis; @rheault]. Other studies are more qualitative in nature, asking interview and survey respondents to categorize the intensity in harassing Tweets sent to them "... as 'neutral,' 'low negativity,' 'medium negativity,' or 'high negativity'" [@tenove, p.5]. Both methods of coding Tweets have strengths and weaknesses. Coding Tweets on a binary means that researchers can automate the analysis process and code more Tweets. However, Tweets which contain subtle microaggressions and undermining comments questioning the authority of politicians are often missed by ML models and are considered as not containing harassment. This is problematic for understanding the full scope and nuanced nature of online harassment faced by politicians, especially female politicians. Qualitative methods including content analysis, interviews, and surveys allow for a deeper investigation of the personal and nuanced nature of online harassment. The drawbacks of qualitative methods include the limited scope of projects, due to the sheer number of Tweets, and the emotional and psychological toll manually coding Tweets can take on researchers and research assistants. 
+
+Concerns about ethics and data sharing with any of the outlined methods. 
+
+# References
